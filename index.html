@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="illustration.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
 
-  </head>
-  <body>
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>pixelvideo</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #video-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+canvas, video {
+  border: none;
+}
+video {
+  margin: 0;
+  padding: 0;
+}
+    </style>
+</head>
+
+<body>
+    <div id="video-container"></div>
+</body>
+
+<!-- import the javascript library file(s) -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js" crossorigin="anonymous"></script>
+
+<!-- import the javascript sketch file -->
+<script src="./sketch.js"></script>
+
 </html>
