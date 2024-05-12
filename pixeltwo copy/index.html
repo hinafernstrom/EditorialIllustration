@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sketchnew</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body></body>
+
+<!-- import the JavaScript library file(s) -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/p5.video"></script>
+
+<!-- import the JavaScript sketch file -->
+<script src="sketch.js"></script>
+
+<script>
+  // Custom code to handle autoplay policy
+  document.addEventListener('click', function () {
+    if (video && video.loaded()) {
+      video.loop();
+    }
+  });
+</script>
+
+</html>
